@@ -122,4 +122,199 @@
                 - Large scale NAT support
                 - Models that support 2 to 12.8T
                 - 256x50G PAM-4 Blackhawk7 integreated SERDES
-                - 4 cores on chip 
+                - 4 cores on chip "for telemetry"
+-Tomahawk:
+        -Manufacturer: Broadcom
+        -Internal name: StrataXGS BCM56960
+        -Geometry: 
+        -Released: 08-01-2015
+        -Ports:
+                10G: 
+                25G: 128
+                40G: 64
+                50G: 64
+                100G: 32
+                400G: 
+        -Forwarding_capacity: 3.2T
+        -Buffer: 16MB
+        -Scale:
+                MAC: 136000
+                IPv4: 128000
+                IPv4_HOST: 104000
+                IPv6: 84000
+                MROUTE: 52000
+        -Latency: 450ns
+        -Platforms:
+                - Juniper QFX5200
+                - Arista 7060X
+                - Facebook Backpack
+                - Quanta T7032-IX1
+        -Errata:
+                - Buffer is spread across 4 cores
+                - Released before standards for 25/100G were adopted.  25G optics require negotiation of FEC (which is implemented as Reed-Soloman FEC), which is not supported on every lane on the Tomahawk's 100G ports.    
+                - 1/10/40G ports typically run at 12GHz, where 25/100G operate at 28GHz. 200G and 400G will operate 56GHz and 112GHz respectively.
+-Tomahawk+:
+        -Manufacturer: Broadcom
+        -Internal name: StrataXGS BCM56965
+        -Geometry:
+        -Released: 12-01-2016
+        -Ports:
+                10G: 130
+                25G: 128
+                40G: 64
+                50G: 64
+                100G: 32
+                400G:
+        -Forwarding_capacity: 3.2T
+        -Buffer: 22MB
+        -Scale:
+                MAC: 136000
+                IPv4: 128000
+                IPv4_HOST: 104000
+                IPv6: 84000
+                MROUTE: 52000
+        -Latency: 450ns
+        -Platforms:
+                - Arista 7060XC2-32S
+        -Errata:
+                - Increases available buffer over BCM56960, fixes interop issue for 25G ports by allowing negotation of FEC.
+-Tomahawk2:
+        -Manufacturer: Broadcom
+        -Internal name: StrataXGS BCM56970
+        -Geometry:
+        -Released: 12-01-2016
+        -Ports:
+                10G: 130
+                25G: 128
+                40G: 64
+                50G: 128
+                100G: 64
+                200G: 
+                400G:
+        -Forwarding_capacity: 6.4T
+        -Buffer: 42MB
+        -Scale:
+                MAC: 264000
+                IPv4: 180000
+                IPv4_HOST: 200000
+                IPv6: 90000
+                MROUTE: 100000
+        -Latency: 450ns
+        -Platforms:
+                - Cisco Nexus C3264C-E
+                - Arista 7260CX3-64
+        -Errata:
+                - Supports packet timestamping on ingress and egress
+                - Still a quad core architecture like past generations, with 10.5MB of buffer per core 
+-Tomahawk3:
+        -Manufacturer: Broadcom
+        -Internal name: StrataXGS BCM56980
+        -Geometry: 16nm
+        -Released: 12-01-2017
+        -Ports:
+                10G: 
+                25G: 128
+                40G: 64
+                50G: 128
+                100G: 128
+                200G: 64
+                400G: 32
+        -Forwarding_capacity: 12.8T
+        -Buffer: 64MB
+        -Scale:
+                MAC: 72000
+                IPv4: 480000
+                IPv4_HOST: 80000
+                IPv6: 300000
+                MROUTE: 16000
+        -Latency: 700ns
+        -Platforms:
+                - Arista 7368X4
+                - QFX5220-32CD 
+        -Errata:
+                - Supports packet timestamping on ingress and egress
+                - Still a quad core architecture like past generations, with 10.5MB of buffer per core
+-Jericho:
+        -Manufacturer: Broadcom
+        -Internal name: StrataDNX BCM88670
+        -Geometry: 
+        -Released: 03-15-2015
+        -Ports:
+                10G: 48
+                25G: 24 
+                40G: 12 
+                50G: 12
+                100G: 6
+                200G: 
+                400G: 
+        -Forwarding_capacity: 720G
+        -Buffer: 16MB on-chip, 4GB off-chip
+        -Scale:
+                MAC: 768000
+                IPv4: 1000000
+                IPv4_HOST: 768000
+                IPv6: 1000000
+                MROUTE: 768000
+        -Latency: 3.8us
+        -Platforms:
+                - Arista 7500R-36CQ
+        -Errata:
+                - Packet procesor/NPU - intended for line cards.
+                - Has a fabric interface to the Dune Fabric Element (BCM88770), can be interconnected to 3 devices without a FE
+                - External buffer implemented in GDDR5/DDR4 DRAM
+                - Fabric interface is 36x25G
+-Qumran:
+        -Manufacturer: Broadcom
+        -Internal name: StrataDNX BCM88370
+        -Geometry: 
+        -Released: 05-01-2017
+        -Ports:
+                10G: 48
+                25G: 24
+                40G: 12
+                50G: 12
+                100G: 6
+                200G:
+                400G:
+        -Forwarding_capacity: 800G
+        -Buffer: 16MB on-chip, 4GB off-chip
+        -Scale:
+                MAC: 768000
+                IPv4: 1000000
+                IPv4_HOST: 768000
+                IPv6: 1000000
+                MROUTE: 768000
+        -Latency: 3.5us
+        -Platforms:
+                - Cisco NCS 5501
+                - Arista 7280CR-48
+        -Errata:
+                - External buffer implemented in GDDR5/DDR4 DRAM
+                - Has 10MB of external TCAM that can be enabled for additional route scale
+-Jericho+:
+        -Manufacturer: Broadcom
+        -Internal name: StrataDNX BCM88680
+        -Geometry: 
+        -Released: 04-01-2018
+        -Ports:
+                10G: 48
+                25G: 24
+                40G: 12
+                50G: 12
+                100G: 6
+                200G:
+                400G:
+        -Forwarding_capacity: 900G
+        -Buffer: 16MB on-chip, 4GB off-chip
+        -Scale:
+                MAC: 768000
+                IPv4: 1300000
+                IPv4_HOST: 768000
+                IPv6: 1300000
+                MROUTE: 768000
+        -Latency: 3.8us
+        -Platforms:
+                - Arista 7280R2
+                - Cisco Nexus 3600R
+        -Errata:
+                - Increased speed from 720G to 900G
