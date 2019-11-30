@@ -230,7 +230,7 @@
         -Latency: 700ns
         -Platforms:
                 - Arista 7368X4
-                - QFX5220-32CD 
+                - Juniper QFX5220-32CD 
         -Errata:
                 - Supports packet timestamping on ingress and egress
                 - Still a quad core architecture like past generations, with 10.5MB of buffer per core
