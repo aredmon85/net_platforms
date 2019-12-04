@@ -232,8 +232,7 @@
                 - Arista 7368X4
                 - Juniper QFX5220-32CD 
         -Errata:
-                - Supports packet timestamping on ingress and egress
-                - Still a quad core architecture like past generations, with 10.5MB of buffer per core
+                - Still a quad core architecture like past generations, with 16MB of buffer per core
 -Jericho:
         -Manufacturer: Broadcom
         -Internal name: StrataDNX BCM88670
