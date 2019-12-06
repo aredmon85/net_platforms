@@ -330,7 +330,7 @@
                 100G: 48 
                 200G:
                 400G: 12 
-        -Forwarding_capacity: 10T
+        -Forwarding_capacity: 4.8T
         -Buffer: 8GB
         -Scale:
                 MAC: 1400000
@@ -346,3 +346,31 @@
                 - 112 x 50G fabric interfaces
                 - Buffer implemented in HBM
                 - Accelerated telemetry
+-Tofino:
+        -Manufacturer: Barefoot
+        -Name: BFN-T10-064Q / BFN-T10-032D
+        -Geometry:
+        -Released: 06-14-2017
+        -Ports:
+                10G: 256
+                25G: 256 
+                40G: 
+                50G: 128 
+                100G: 64  
+                200G:
+                400G: 
+        -Forwarding_capacity: 6.4T
+        -Buffer: 22MB
+        -Scale:
+                MAC: 1400000
+                IPv4: 1200000
+                IPv4_HOST: 1400000
+                IPv6: 821000
+                MROUTE: 1400000
+        -Latency: 800ns
+        -Platforms:
+                - Arista 7170
+                - Facebook Wedge100BF-65X
+        -Errata:
+                - P4 Programmable pipeline
+
