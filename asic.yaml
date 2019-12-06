@@ -1,6 +1,6 @@
 -Trident:
         -Manufacturer: Broadcom
-        -Internal name: StrataXGS BCM56840
+        -Name: StrataXGS BCM56840
         -Released: 03-01-2010
         -Ports:
                 10G: 48
@@ -20,7 +20,7 @@
                 - Arista 7050S-64
 -Trident2:
         -Manufacturer: Broadcom
-        -Internal name: StrataXGS BCM56850, BCM56854
+        -Name: StrataXGS BCM56850, BCM56854
         -Geometry: 40nm
         -Released: 11-01-2013
         -Ports:
@@ -43,7 +43,7 @@
                 - Supports VXLAN, though may be recirculated
 -Trident2+:
         -Manufacturer: Broadcom
-        -Internal name: StrataXGS BCM56860
+        -Name: StrataXGS BCM56860
         -Geometry: 28nm
         -Released: 04-01-2015
         -Ports:
@@ -67,7 +67,7 @@
                 - Supports VXLAN without recirculation
 -Trident3:
         -Manufacturer: Broadcom
-        -Internal name: StrataXGS BCM56870
+        -Name: StrataXGS BCM56870
         -Geometry: 16nm
         -Released: 06-14-2017
         -Ports:
@@ -97,7 +97,7 @@
                 - Also offered in a access layer configuratio with reduced buffer
 -Trident4:
         -Manufacturer: Broadcom
-        -Internal name: StrataXGS BCM56880
+        -Name: StrataXGS BCM56880
         -Geometry: 7nm 
         -Released: 
         -Ports:
@@ -125,7 +125,7 @@
                 - 4 cores on chip "for telemetry"
 -Tomahawk:
         -Manufacturer: Broadcom
-        -Internal name: StrataXGS BCM56960
+        -Name: StrataXGS BCM56960
         -Geometry: 
         -Released: 08-01-2015
         -Ports:
@@ -155,7 +155,7 @@
                 - 1/10/40G ports typically run at 12GHz, where 25/100G operate at 28GHz. 200G and 400G will operate 56GHz and 112GHz respectively.
 -Tomahawk+:
         -Manufacturer: Broadcom
-        -Internal name: StrataXGS BCM56965
+        -Name: StrataXGS BCM56965
         -Geometry:
         -Released: 12-01-2016
         -Ports:
@@ -180,7 +180,7 @@
                 - Increases available buffer over BCM56960, fixes interop issue for 25G ports by allowing negotation of FEC.
 -Tomahawk2:
         -Manufacturer: Broadcom
-        -Internal name: StrataXGS BCM56970
+        -Name: StrataXGS BCM56970
         -Geometry:
         -Released: 12-01-2016
         -Ports:
@@ -208,7 +208,7 @@
                 - Still a quad core architecture like past generations, with 10.5MB of buffer per core 
 -Tomahawk3:
         -Manufacturer: Broadcom
-        -Internal name: StrataXGS BCM56980
+        -Name: StrataXGS BCM56980
         -Geometry: 16nm
         -Released: 12-01-2017
         -Ports:
@@ -235,7 +235,7 @@
                 - Still a quad core architecture like past generations, with 16MB of buffer per core
 -Jericho:
         -Manufacturer: Broadcom
-        -Internal name: StrataDNX BCM88670
+        -Name: StrataDNX BCM88670
         -Geometry: 
         -Released: 03-15-2015
         -Ports:
@@ -264,7 +264,7 @@
                 - Fabric interface is 36x25G
 -Qumran:
         -Manufacturer: Broadcom
-        -Internal name: StrataDNX BCM88370
+        -Name: StrataDNX BCM88370
         -Geometry: 
         -Released: 05-01-2017
         -Ports:
@@ -292,7 +292,7 @@
                 - Has 10MB of external TCAM that can be enabled for additional route scale
 -Jericho+:
         -Manufacturer: Broadcom
-        -Internal name: StrataDNX BCM88680
+        -Name: StrataDNX BCM88680
         -Geometry: 
         -Released: 04-01-2018
         -Ports:
@@ -317,3 +317,32 @@
                 - Cisco Nexus 3600R
         -Errata:
                 - Increased speed from 720G to 900G
+-Jericho2:
+        -Manufacturer: Broadcom
+        -Name: StrataDNX BCM88690
+        -Geometry:
+        -Released: 02-27-2019
+        -Ports:
+                10G: 192 
+                25G: 192
+                40G: 12
+                50G: 96
+                100G: 48 
+                200G:
+                400G: 12 
+        -Forwarding_capacity: 10T
+        -Buffer: 8GB
+        -Scale:
+                MAC: 1400000
+                IPv4: 1200000
+                IPv4_HOST: 1400000
+                IPv6: 821000
+                MROUTE: 1400000
+        -Latency: 3.8us
+        -Platforms:
+                - Arista 7280R3
+        -Errata:
+                - 96 PAM4 50G SERDES
+                - 112 x 50G fabric interfaces
+                - Buffer implemented in HBM
+                - Accelerated telemetry
