@@ -156,7 +156,7 @@
 -Tomahawk+:
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56965
-        -Geometry:
+        -Geometry: 28nm
         -Released: 12-01-2016
         -Ports:
                 10G: 130
@@ -233,6 +233,32 @@
                 - Juniper QFX5220-32CD 
         -Errata:
                 - Still a quad core architecture like past generations, with 16MB of buffer per core
+                - Hosts an ARM chip on package and on SERDES to handle telemetry
+-Tomahawk4:
+        -Manufacturer: Broadcom
+        -Name: 
+        -Geometry: 7nm
+        -Released: Summer 2020 
+        -Ports:
+                10G:
+                25G: 
+                40G: 
+                50G: 
+                100G: 256 
+                200G: 
+                400G: 64
+        -Forwarding_capacity: 25.6T
+        -Buffer: 
+        -Scale:
+                MAC: 
+                IPv4: 
+                IPv4_HOST: 
+                IPv6: 
+                MROUTE: 
+        -Latency: 
+        -Platforms:
+        -Errata:
+                - Hosts an ARM chip on package and on SERDES to handle telemetry
 -Jericho:
         -Manufacturer: Broadcom
         -Name: StrataDNX BCM88670
