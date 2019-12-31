@@ -399,4 +399,28 @@
                 - Facebook Wedge100BF-65X
         -Errata:
                 - P4 Programmable pipeline
-
+-Q100:
+        -Manufacturer: Cisco
+        -Name: Silicon One Q100
+        -Geometry:
+        -Released: 2020
+        -Ports:
+                10G: 
+                25G: 
+                40G:
+                50G: 
+                100G: 12
+                200G:
+                400G: 24
+        -Forwarding_capacity: 10.6T
+        -Buffer: 
+        -Scale:
+                MAC: 
+                IPv4: 
+                IPv4_HOST: 
+                IPv6: 
+                MROUTE: 
+        -Latency: 
+        -Platforms:
+        -Errata:
+                - P4 Programmable pipeline
