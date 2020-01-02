@@ -6,7 +6,8 @@
                 10G: 48
                 40G: 4
         -Forwarding_capacity: 480G
-        -Buffer: 9MB
+        -PPS:
+	-Buffer: 9MB
         -Scale:
                 MAC: 128000
                 IPv4: 16000
@@ -27,7 +28,8 @@
                 10G: 104
                 40G: 32
         -Forwarding_capacity: 1.28T
-        -Buffer: 12MB
+        -PPS:
+	-Buffer: 12MB
         -Scale:
                 MAC: 288000
                 IPv4: 144000
@@ -51,7 +53,8 @@
                 40G: 32
                 100G: 8
         -Forwarding_capacity: 1.28T
-        -Buffer: 16MB
+        -PPS:
+	-Buffer: 16MB
         -Scale:
                 MAC: 288000
                 IPv4: 144000
@@ -77,7 +80,8 @@
                 50G: 64
                 100G: 32
         -Forwarding_capacity: 6.4T
-        -Buffer: 32MB
+        -PPS: 2BPPS
+	-Buffer: 32MB
         -Scale:
                 MAC: 288000
                 IPv4: 360000
@@ -108,7 +112,8 @@
                 100G: 128
                 400G: 32
         -Forwarding_capacity: 12.8T
-        -Buffer: 
+        -PPS:
+	-Buffer: 
         -Scale:
                 MAC: 
                 IPv4: 
@@ -136,7 +141,8 @@
                 100G: 32
                 400G: 
         -Forwarding_capacity: 3.2T
-        -Buffer: 16MB
+        -PPS:
+	-Buffer: 16MB
         -Scale:
                 MAC: 136000
                 IPv4: 128000
@@ -166,7 +172,8 @@
                 100G: 32
                 400G:
         -Forwarding_capacity: 3.2T
-        -Buffer: 22MB
+        -PPS:
+	-Buffer: 22MB
         -Scale:
                 MAC: 136000
                 IPv4: 128000
@@ -192,7 +199,8 @@
                 200G: 
                 400G:
         -Forwarding_capacity: 6.4T
-        -Buffer: 42MB
+        -PPS:
+	-Buffer: 42MB
         -Scale:
                 MAC: 264000
                 IPv4: 180000
@@ -220,7 +228,8 @@
                 200G: 64
                 400G: 32
         -Forwarding_capacity: 12.8T
-        -Buffer: 64MB
+        -PPS:
+	-Buffer: 64MB
         -Scale:
                 MAC: 72000
                 IPv4: 480000
@@ -248,7 +257,8 @@
                 200G: 
                 400G: 64
         -Forwarding_capacity: 25.6T
-        -Buffer: 
+        -PPS:
+	-Buffer: 
         -Scale:
                 MAC: 
                 IPv4: 
@@ -273,7 +283,8 @@
                 200G: 
                 400G: 
         -Forwarding_capacity: 720G
-        -Buffer: 16MB on-chip, 4GB off-chip
+        -PPS:
+	-Buffer: 16MB on-chip, 4GB off-chip
         -Scale:
                 MAC: 768000
                 IPv4: 1000000
@@ -302,7 +313,8 @@
                 200G:
                 400G:
         -Forwarding_capacity: 800G
-        -Buffer: 16MB on-chip, 4GB off-chip
+        -PPS:
+	-Buffer: 16MB on-chip, 4GB off-chip
         -Scale:
                 MAC: 768000
                 IPv4: 1000000
@@ -330,7 +342,8 @@
                 200G:
                 400G:
         -Forwarding_capacity: 900G
-        -Buffer: 16MB on-chip, 4GB off-chip
+        -PPS:
+	-Buffer: 16MB on-chip, 4GB off-chip
         -Scale:
                 MAC: 768000
                 IPv4: 1300000
@@ -357,7 +370,8 @@
                 200G:
                 400G: 12 
         -Forwarding_capacity: 4.8T
-        -Buffer: 8GB
+        -PPS: 2BPPS
+	-Buffer: 8GB
         -Scale:
                 MAC: 1400000
                 IPv4: 1200000
@@ -386,7 +400,8 @@
                 200G:
                 400G: 
         -Forwarding_capacity: 6.4T
-        -Buffer: 22MB
+        -PPS:
+	-Buffer: 22MB
         -Scale:
                 MAC: 1400000
                 IPv4: 1200000
@@ -413,7 +428,8 @@
                 200G:
                 400G: 24
         -Forwarding_capacity: 10.6T
-        -Buffer: 
+        -PPS:
+	-Buffer: 
         -Scale:
                 MAC: 
                 IPv4: 
