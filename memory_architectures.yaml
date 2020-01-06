@@ -1,0 +1,29 @@
+TCAM:
+	Speed: 
+Notes: Stores bits as 0,1 or ? - ? matches both 0 and 1.  Search is parallel and based on the data presented - basically, you search by providing data, and the result provided is the address location in memory.  This is the opposite of something like SRAM where you search based on the address and the result provided is the data.  Provides the result address location in a single cycle.  Searches the entire array, which means its power intensive.  Power use can be reduced by dividing the TCAM into partitions and pipelining (adding cycles).  Very large because there are two bits per cell.  Search keys are based on bit length (80 bit, 160 bit, 320 bit).  Can perform write, read, search.  Granularity of your search macro determines power (bit width).
+HBM2:
+	Speed: 256GB/s
+	Notes: High Bandwidth Memory.  Power efficient.  Great for networking since it's high throughput (latency is throughput?).  Runs at a lower clock speed (2Gb/s per wire at 1024 connections across a silicon interposer, which is a silicon interconnect), but with many more connections/wires, which requires 2.5D or 3D tech.  Can sit on package/interposer.  The 2.5D/3D design is relatively more expensive since it's a newer tech not produced in the volume of GDDR.  Challenges with yield and thermals - stacking result in heat trapping.
+	Applications: 
+		- Crypto mining
+		- AI
+		- Networking
+		- Graphics
+	Examples:
+		- AMD Radeon RX Vega 56
+		- nVidia Tesla V100
+GDDR6:
+	Speed: 256GB/s
+	Notes: Graphics Double Data Rate Type Six Synchronous Dynamic Random Access Memory.  Faster, but more power intensive.  Because of the speed, you have potential signal integrity challenges.
+		- Cost sensitive applications
+		- Low speed networking/WiFi
+	Examples:
+		- nVidia GeForce RTX2080Ti
+SRAM:
+	Speed: Very fast
+	Notes: Typically very fast because it's directly on-chip.  Biggest challenge is capacity because of limited space on the chip.  
+	Examples:
+		- Any L1/L2 cache
+LP-DDR4:
+DDR4:
+HBM2E:
