@@ -386,6 +386,81 @@
                 - 112 x 50G fabric interfaces
                 - Buffer implemented in HBM
                 - Accelerated telemetry
+-Jericho2c:
+        -Manufacturer: Broadcom
+        -Name: 
+        -Geometry:
+        -Released: 
+        -Ports:
+                10G:  
+                25G: 
+                40G: 
+                50G: 
+                100G:  
+                200G:
+                400G:  
+        -Forwarding_capacity: 
+        -PPS: 
+	-Buffer: 
+        -Scale:
+                MAC: 
+                IPv4: 
+                IPv4_HOST: 
+                IPv6: 
+                MROUTE: 
+        -Latency: 
+        -Platforms:
+        -Errata:
+-Qumran2c:
+        -Manufacturer: Broadcom
+        -Name: 
+        -Geometry:
+        -Released: 
+        -Ports:
+                10G:  
+                25G: 
+                40G: 
+                50G: 
+                100G:  
+                200G:
+                400G:  
+        -Forwarding_capacity: 
+        -PPS: 
+	-Buffer: 
+        -Scale:
+                MAC: 
+                IPv4: 
+                IPv4_HOST: 
+                IPv6: 
+                MROUTE: 
+        -Latency: 
+        -Platforms:
+        -Errata:
+-Qumran2a:
+        -Manufacturer: Broadcom
+        -Name: 
+        -Geometry:
+        -Released: 
+        -Ports:
+                10G:  
+                25G: 
+                40G: 
+                50G: 
+                100G:  
+                200G:
+                400G:  
+        -Forwarding_capacity: 
+        -PPS: 
+	-Buffer: 
+        -Scale:
+                MAC: 
+                IPv4: 
+                IPv4_HOST: 
+                IPv6: 
+                MROUTE: 
+        -Latency: 
+        -Platforms:
+        -Errata:
 -Tofino:
         -Manufacturer: Barefoot
         -Name: BFN-T10-064Q / BFN-T10-032D
