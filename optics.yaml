@@ -1,0 +1,35 @@
+100GBASE-CWDM4:
+	transceiver: QSFP28,CFP2,CFP4
+	lanes: 4x25G
+	encoding: 64b/66b x NRZ
+	standard: proprietary
+	reach: 2km
+	errata:
+100GBASE-CWDM4-OCP:
+	transceivers: QSFP28
+	lanes: 4x25G
+	encoding: 64b/66b x NRZ,256/257b x RS-FEC x NRZ
+	standard: proprietary
+	reach: 2km
+	errata: Derived from CWDM4 and created by Open Compute Project, cheaper
+100GBASE-LR4:
+	transceivers: QSFP28,CFP2,CFP4
+	lanes: 4x25G
+	encoding: 64b/66b x NRZ
+	standard: 802.3ba-2010 (CL88)
+	reach: 10km
+	errata:
+100GBASE-ZR4:
+	transceivers: CFP
+	lanes: 2
+	encoding: DP-QPSK x SD-FEC
+	standard: proprietary, Juniper
+	reach: 80km
+	errata:
+100GBASE-ER:
+	transceivers: QSFP28,CFP,CFP2
+	lanes: 4x25G
+	encoding: 64b/66b x NRZ,FEC???
+	standard: 802.3ba-2010
+	reach: 40km
+	errata: FEC must be enabled for 40km reach, not sure what the true encoding and type of FEC used is 
