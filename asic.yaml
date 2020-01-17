@@ -243,6 +243,7 @@
         -Errata:
                 - Still a quad core architecture like past generations, with 16MB of buffer per core
                 - Hosts an ARM chip on package and on SERDES to handle telemetry
+		- No support for any L2 tunneling (VXLAN,NVGRE,GRE),TRILL/SPB,NAT,or NAT
 -Tomahawk4:
         -Manufacturer: Broadcom
         -Name: 
