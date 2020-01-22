@@ -1,5 +1,5 @@
 8b/10b:
-	notes: transofmrs 8-bit data into 10-bit line code.  20% overhead as an additional 2 bits of data are added to every 8 bits of data.  Used by PCIE 1.0, 1Gbps Ethernet (but not 1000Base-t), USB 3.0.
+	notes: transforms 8-bit data into 10-bit line code.  20% overhead as an additional 2 bits of data are added to every 8 bits of data.  Used by PCIE 1.0, 1Gbps Ethernet (but not 1000Base-t), USB 3.0.
 64b/66b:
 	notes: transforms 64-bit data into 66-bit line code.  Encodes an additional 2 bits of data (66 bits for every 64), resulting in 3.125% overhead.  Used by 10Gbps Ethernet.
 128b/130b:
