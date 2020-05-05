@@ -243,7 +243,7 @@
         -Errata:
                 - Still a quad core architecture like past generations, with 16MB of buffer per core
                 - Hosts an ARM chip on package and on SERDES to handle telemetry
-		- No support for any L2 tunneling (VXLAN,NVGRE,GRE),TRILL/SPB,NAT,or NAT
+		- No support for any L2 tunneling (VXLAN,NVGRE,GRE),TRILL/SPB, or NAT
 -Tomahawk4:
         -Manufacturer: Broadcom
         -Name: 
@@ -270,6 +270,7 @@
         -Platforms:
         -Errata:
                 - Hosts an ARM chip on package and on SERDES to handle telemetry
+		- 50G SERDES, 2RU platform with 64 ports
 -Jericho:
         -Manufacturer: Broadcom
         -Name: StrataDNX BCM88670
