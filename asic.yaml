@@ -361,7 +361,7 @@
 -Jericho2:
         -Manufacturer: Broadcom
         -Name: StrataDNX BCM88690
-        -Geometry:
+        -Geometry: 16nm
         -Released: 02-27-2019
         -Ports:
                 10G: 192 
@@ -373,7 +373,7 @@
                 400G: 12 
         -Forwarding_capacity: 4.8T
         -PPS: 2BPPS
-	-Buffer: 8GB
+	-Buffer: 32MB on-chip, 8GB off-chip
         -Scale:
                 MAC: 1400000
                 IPv4: 1200000
@@ -388,6 +388,7 @@
                 - 112 x 50G fabric interfaces
                 - Buffer implemented in HBM
                 - Accelerated telemetry
+		- External TCAM offers 4M+ extra IPv4 route scale
 -Jericho2c:
         -Manufacturer: Broadcom
         -Name: 
@@ -395,13 +396,13 @@
         -Released: 
         -Ports:
                 10G:  
-                25G: 
-                40G: 
+                25G: 96 
+                40G: 32
                 50G: 
                 100G:  
                 200G:
                 400G:  
-        -Forwarding_capacity: 
+        -Forwarding_capacity: 2.4-3.0T 
         -PPS: 
 	-Buffer: 
         -Scale:
