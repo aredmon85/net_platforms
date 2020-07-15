@@ -9,11 +9,11 @@
         -PPS:
 	-Buffer: 9MB
         -Scale:
-                MAC: 128000
-                IPv4: 16000
-                IPv4_HOST: 32000
-                IPv6: 8000
-                MROUTE: 8000
+                MAC: 128K
+                IPv4: 16K
+                IPv4_HOST: 32K
+                IPv6: 8K
+                MROUTE: 8K
         -Latency: 800ns
         -Platforms:
                 - Juniper QFX3500
@@ -31,11 +31,11 @@
         -PPS:
 	-Buffer: 12MB
         -Scale:
-                MAC: 288000
-                IPv4: 144000
-                IPv4_HOST: 208000
-                IPv6: 64000
-                MROUTE: 104000
+                MAC: 288K
+                IPv4: 144L
+                IPv4_HOST: 208K
+                IPv6: 64K
+                MROUTE: 104K
         -Latency: 550ns
         -Platforms:
                 - Juniper QFX5100
@@ -56,11 +56,11 @@
         -PPS:
 	-Buffer: 16MB
         -Scale:
-                MAC: 288000
-                IPv4: 144000
-                IPv4_HOST: 208000
-                IPv6: 64000
-                MROUTE: 104000
+                MAC: 288K
+                IPv4: 144K
+                IPv4_HOST: 208K
+                IPv6: 64K
+                MROUTE: 104K
         -Latency: 550ns
         -Platforms:
                 - Juniper QFX5110
@@ -83,11 +83,11 @@
         -PPS: 2BPPS
 	-Buffer: 32MB
         -Scale:
-                MAC: 288000
-                IPv4: 360000
-                IPv4_HOST: 168000
-                IPv6: 64000
-                MROUTE: 104000
+                MAC: 288K
+                IPv4: 360K
+                IPv4_HOST: 168K
+                IPv6: 64K
+                MROUTE: 104K
         -Latency: 800ns
         -Platforms:
                 - Juniper QFX5120
@@ -145,11 +145,11 @@
         -PPS:
 	-Buffer: 16MB
         -Scale:
-                MAC: 136000
-                IPv4: 128000
-                IPv4_HOST: 104000
-                IPv6: 84000
-                MROUTE: 52000
+                MAC: 136K
+                IPv4: 128K
+                IPv4_HOST: 104K
+                IPv6: 84K
+                MROUTE: 52K
         -Latency: 450ns
         -Platforms:
                 - Juniper QFX5200
@@ -176,11 +176,11 @@
         -PPS:
 	-Buffer: 22MB
         -Scale:
-                MAC: 136000
-                IPv4: 128000
-                IPv4_HOST: 104000
-                IPv6: 84000
-                MROUTE: 52000
+                MAC: 136K
+                IPv4: 128K
+                IPv4_HOST: 104K
+                IPv6: 84K
+                MROUTE: 52:
         -Latency: 450ns
         -Platforms:
                 - Arista 7060XC2-32S
@@ -203,11 +203,11 @@
         -PPS:
 	-Buffer: 42MB
         -Scale:
-                MAC: 264000
-                IPv4: 180000
-                IPv4_HOST: 200000
-                IPv6: 90000
-                MROUTE: 100000
+                MAC: 264K
+                IPv4: 180K
+                IPv4_HOST: 200K
+                IPv6: 90K
+                MROUTE: 100K
         -Latency: 450ns
         -Platforms:
                 - Cisco Nexus C3264C-E
@@ -232,11 +232,11 @@
         -PPS:
 	-Buffer: 64MB
         -Scale:
-                MAC: 72000
-                IPv4: 480000
-                IPv4_HOST: 80000
-                IPv6: 300000
-                MROUTE: 16000
+                MAC: 72K
+                IPv4: 480K
+                IPv4_HOST: 80K
+                IPv6: 300K
+                MROUTE: 16K
         -Latency: 700ns
         -Platforms:
                 - Arista 7368X4
@@ -289,11 +289,11 @@
         -PPS:
 	-Buffer: 16MB on-chip, 4GB off-chip
         -Scale:
-                MAC: 768000
-                IPv4: 1000000
-                IPv4_HOST: 768000
-                IPv6: 1000000
-                MROUTE: 768000
+                MAC: 768K
+                IPv4: 1M
+                IPv4_HOST: 768K
+                IPv6: 1M
+                MROUTE: 768K
         -Latency: 3.8us
         -Platforms:
                 - Arista 7500R-36CQ
@@ -319,11 +319,11 @@
         -PPS:
 	-Buffer: 16MB on-chip, 4GB off-chip
         -Scale:
-                MAC: 768000
-                IPv4: 1000000
-                IPv4_HOST: 768000
-                IPv6: 1000000
-                MROUTE: 768000
+                MAC: 768K
+                IPv4: 1M
+                IPv4_HOST: 768K
+                IPv6: 1M
+                MROUTE: 768K
         -Latency: 3.5us
         -Platforms:
                 - Cisco NCS 5501
@@ -348,11 +348,11 @@
         -PPS:
 	-Buffer: 16MB on-chip, 4GB off-chip
         -Scale:
-                MAC: 768000
-                IPv4: 1300000
-                IPv4_HOST: 768000
-                IPv6: 1300000
-                MROUTE: 768000
+                MAC: 768K
+                IPv4: 1.3M
+                IPv4_HOST: 768K
+                IPv6: 1.3M
+                MROUTE: 768K
         -Latency: 3.8us
         -Platforms:
                 - Arista 7280R2
@@ -376,11 +376,11 @@
         -PPS: 2BPPS
 	-Buffer: 32MB on-chip, 8GB off-chip
         -Scale:
-                MAC: 1400000
-                IPv4: 1200000
-                IPv4_HOST: 1400000
-                IPv6: 821000
-                MROUTE: 1400000
+                MAC: 1.4M
+                IPv4: 1.2M
+                IPv4_HOST: 1.4M
+                IPv6: 821K
+                MROUTE: 1.4M
         -Latency: 3.8us
         -Platforms:
                 - Arista 7280R3
@@ -482,11 +482,11 @@
         -PPS:
 	-Buffer: 22MB
         -Scale:
-                MAC: 1400000
-                IPv4: 1200000
-                IPv4_HOST: 1400000
-                IPv6: 821000
-                MROUTE: 1400000
+                MAC: 1.4M
+                IPv4: 1.2M
+                IPv4_HOST: 1.4M
+                IPv6: 821K
+                MROUTE: 1.4M
         -Latency: 800ns
         -Platforms:
                 - Arista 7170
