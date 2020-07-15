@@ -1,2 +1,5 @@
 latency:
-	- 3.34 microseconds per kilometer in a vacuum, ~5 microseconds per kilometer in fiber accounting for refraction
+	- Propagation delay: 
+		- 3.34 microseconds per kilometer in a vacuum, ~5 microseconds per kilometer in fiber accounting for refraction
+	- Serialization delay:
+		- Varying latency based on the speed of the interface and size of the datagram.  1500B on a 10G link takes 1.2 microseconds to serialize.

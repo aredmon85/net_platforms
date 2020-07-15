@@ -113,15 +113,16 @@
                 400G: 32
         -Forwarding_capacity: 12.8T
         -PPS:
-	-Buffer: 
+	-Buffer: 132MB 
         -Scale:
-                MAC: 
-                IPv4: 
-                IPv4_HOST: 
-                IPv6: 
+                MAC: 160K
+                IPv4: 1.24M
+                IPv4_HOST: 16K
+                IPv6: 610K
                 MROUTE: 
         -Latency: 
         -Platforms:
+		- QFX5130
         -Errata:
                 - Supports NPL (Network Programming Language), which seems to be a competitor to P4.  https://nplang.org/
                 - Large scale NAT support
