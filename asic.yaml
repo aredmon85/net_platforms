@@ -129,6 +129,10 @@
                 - Models that support 2 to 12.8T
                 - 256x50G PAM-4 Blackhawk7 integreated SERDES
                 - 4 cores on chip "for telemetry"
+                - No MACsec on internal PHYs
+                - 32 Blackhawk cores
+                - 4 Merlin cores (4x10G management, can be used for dataplane)
+                - 144 max logical ports
 -Tomahawk:
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56960
@@ -260,7 +264,7 @@
                 400G: 64
         -Forwarding_capacity: 25.6T
         -PPS:
-	-Buffer: 
+	-Buffer: 114MB
         -Scale:
                 MAC: 
                 IPv4: 
@@ -272,6 +276,8 @@
         -Errata:
                 - Hosts an ARM chip on package and on SERDES to handle telemetry
 		- 50G SERDES, 2RU platform with 64 ports
+                - VXLAN support without recirculation
+                - INT support
 -Jericho:
         -Manufacturer: Broadcom
         -Name: StrataDNX BCM88670
