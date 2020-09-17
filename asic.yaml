@@ -193,7 +193,7 @@
 -Tomahawk2:
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56970
-        -Geometry:
+        -Geometry: 16nm
         -Released: 12-01-2016
         -Ports:
                 10G: 130
@@ -218,7 +218,7 @@
                 - Arista 7260CX3-64
         -Errata:
                 - Supports packet timestamping on ingress and egress
-                - Still a quad core architecture like past generations, with 10.5MB of buffer per core 
+                - Still a quad pipeline architecture like past generations, with 10.5MB of buffer per core 
 -Tomahawk3:
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56980
