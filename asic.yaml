@@ -23,6 +23,7 @@
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56850, BCM56854
         -Geometry: 40nm
+        -SERDES: 128x10G
         -Released: 11-01-2013
         -Ports:
                 10G: 104
@@ -46,6 +47,7 @@
 -Trident2+:
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56860
+        -SERDES: 128x10G
         -Geometry: 28nm
         -Released: 04-01-2015
         -Ports:
@@ -72,6 +74,7 @@
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56870
         -Geometry: 16nm
+        -SERDES: 128x25G
         -Released: 06-14-2017
         -Ports:
                 10G: 128
@@ -102,7 +105,8 @@
 -Trident4:
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56880
-        -Geometry: 7nm 
+        -Geometry: 7nm
+        -SERDES: 256x50G
         -Released: 
         -Ports:
                 10G: 
@@ -124,6 +128,7 @@
         -Platforms:
 		- QFX5130
         -Errata:
+                - 8 Pipelines that feed into 2 'traffic managers'.  66MB per TM.
                 - Supports NPL (Network Programming Language), which seems to be a competitor to P4.  https://nplang.org/
                 - Large scale NAT support
                 - Models that support 2 to 12.8T
@@ -136,7 +141,8 @@
 -Tomahawk:
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56960
-        -Geometry: 
+        -Geometry:
+        -SERDES: 128x25G 
         -Released: 08-01-2015
         -Ports:
                 10G: 
@@ -168,6 +174,7 @@
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56965
         -Geometry: 28nm
+        -SERDES: 128x25G
         -Released: 12-01-2016
         -Ports:
                 10G: 130
@@ -194,6 +201,7 @@
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56970
         -Geometry: 16nm
+        -SERDES: 256x25G
         -Released: 12-01-2016
         -Ports:
                 10G: 130
@@ -223,6 +231,7 @@
         -Manufacturer: Broadcom
         -Name: StrataXGS BCM56980
         -Geometry: 16nm
+        -SERDES: 256x50G
         -Released: 12-01-2017
         -Ports:
                 10G: 
@@ -253,6 +262,7 @@
         -Manufacturer: Broadcom
         -Name: 
         -Geometry: 7nm
+        -SERDES: 512x50G
         -Released: Summer 2020 
         -Ports:
                 10G:
